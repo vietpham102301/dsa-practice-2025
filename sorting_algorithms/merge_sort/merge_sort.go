@@ -19,7 +19,8 @@ func MergeSort(arr []int) []int {
 
 // Merge performing sorting in each array
 func merge(arr1, arr2 []int) []int {
-	var result []int
+	// Pre‑allocate capacity to avoid repeated allocations.
+	result := make([]int, 0, len(arr1)+len(arr1))
 
 	for len(arr1) > 0 && len(arr2) > 0 {
 		if arr1[0] > arr2[0] {
