@@ -8,7 +8,7 @@ import (
 func main() {
 	unsortedArray := []int{3, 1, 5, 2, 3, 7, 9}
 
-	sortedArray := merge_sort.MergeSort(unsortedArray)
+	sortedArray := merge_sort.MergeSort(unsortedArray) //O(nlogn)
 
 	fmt.Println(sortedArray)
 }
