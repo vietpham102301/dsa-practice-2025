@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func mergeSortedArr(nums1 []int, m int, nums2 []int, n int) {
-	l := cap(nums1) - 1
+	l := len(nums1) - 1
 	i, j := m-1, n-1
 
 	for l >= 0 {
