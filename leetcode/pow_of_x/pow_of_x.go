@@ -16,7 +16,7 @@ func myPow(x float64, n int) float64 {
 
 	res := 1.0
 	for n > 0 {
-		if n&1 == 1 {
+		if n&1 == 1 { //khi n là số lẻ thì cần nhân thêm res cũ vào x
 			res *= x
 		}
 		x *= x
