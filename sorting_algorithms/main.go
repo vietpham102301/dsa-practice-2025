@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
-	unsortedArray := []int{3, 1, 5, 2, 3, 7, 9}
+	unsortedArray := []int{0, 1, 2, -2, -1}
 
-	sortedArray := algorithms.InsertionSort(unsortedArray)
+	sortedArray := algorithms.CountingSort(unsortedArray)
 	fmt.Println(sortedArray)
 }
