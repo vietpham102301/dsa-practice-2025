@@ -9,6 +9,6 @@ import (
 func main() {
 	unsortedArray := []int{0, 1, 2, -2, -1}
 
-	sortedArray := algorithms.CountingSort(unsortedArray)
+	sortedArray := algorithms.RadixSort(unsortedArray)
 	fmt.Println(sortedArray)
 }
