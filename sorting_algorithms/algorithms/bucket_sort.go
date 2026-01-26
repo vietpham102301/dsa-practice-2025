@@ -3,6 +3,9 @@ package algorithms
 import "sort"
 
 func BucketSort(arr []int) []int {
+	if len(arr) == 0 {
+		return arr
+	}
 	bucketSize := 10
 
 	minVal, maxVal := arr[0], arr[0]
