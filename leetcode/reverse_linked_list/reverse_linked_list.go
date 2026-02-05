@@ -20,6 +20,18 @@ func reverseList(head *ListNode) *ListNode {
 	return prev
 }
 
+func reverseListRecursion(head *ListNode) *ListNode {
+	if head == nil || head.Next == nil {
+		return head
+	}
+
+	newHead := reverseList(head.Next)
+	head.Next.Next = head
+	head.Next = nil
+
+	return newHead
+}
+
 func printList(head *ListNode) {
 	curr := head
 	for curr != nil {
@@ -44,6 +56,6 @@ func main() {
 		},
 	}
 
-	newHead := reverseList(head)
+	newHead := reverseListRecursion(head)
 	printList(newHead)
 }
