@@ -30,7 +30,7 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	}
 
 	//cal median
-	sum := (m + n)
+	sum := m + n
 	if sum%2 == 0 {
 		mid := sum/2 - 1
 		return (float64(mergeSortedArr[mid]) + float64(mergeSortedArr[mid+1])) / 2.0
