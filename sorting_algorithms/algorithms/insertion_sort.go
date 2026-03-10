@@ -10,6 +10,5 @@ func InsertionSort(nums []int) []int {
 		}
 		nums[j+1] = key
 	}
-
 	return nums
 }
